@@ -1,0 +1,26 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  height: 530px;
+  background-image: asset-url('lock_tech');
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.front-page-header {
+  margin-top: 90px;
+}
+
+.front-page-header h1{
+  font-size: 50px;
+}
