@@ -4,9 +4,11 @@ class CreateJobs < ActiveRecord::Migration[5.1]
       t.string :title
       t.text :description
       t.string :company
-      t.timestamps
       t.string :technologies, array: true
-      t.string :extra_knowledge, array: true
+      t.string :field, array: true
+      t.integer :pay
+      t.timestamps
+
     end
   end
 end

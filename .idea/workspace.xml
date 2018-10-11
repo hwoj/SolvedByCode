@@ -75,7 +75,7 @@
           <entry key="js" value="1" />
           <entry key="rb" value="199" />
           <entry key="scss" value="522" />
-          <entry key="yml" value="28" />
+          <entry key="yml" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -84,7 +84,7 @@
           <entry key="RHTML" value="1011" />
           <entry key="Ruby" value="244" />
           <entry key="SCSS" value="522" />
-          <entry key="YAML" value="28" />
+          <entry key="YAML" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -147,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -372,12 +372,12 @@
       <workItem from="1539189318336" duration="15000" />
       <workItem from="1539214908407" duration="6694000" />
       <workItem from="1539279120652" duration="2754000" />
-      <workItem from="1539297268989" duration="858000" />
+      <workItem from="1539297268989" duration="1112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27355000" />
+    <option name="totallyTimeSpent" value="27609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
@@ -498,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="120">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
