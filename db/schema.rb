@@ -16,9 +16,10 @@ ActiveRecord::Schema.define(version: 20181011155638) do
     t.string "title"
     t.text "description"
     t.string "company"
+    t.string "location"
     t.string "technologies"
     t.string "field"
-    t.integer "pay"
+    t.string "pay"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

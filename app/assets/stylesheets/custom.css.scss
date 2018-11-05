@@ -1,5 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+.navbar {
+  margin-bottom: 20px;
+}
+
 .center {
   text-align: center;
 }
@@ -44,4 +48,9 @@
 .why p {
   line-height: 1.7em;
   font-size: 1.3em;
+}
+
+.job-form {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
