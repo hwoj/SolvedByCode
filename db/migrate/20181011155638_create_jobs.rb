@@ -8,6 +8,8 @@ class CreateJobs < ActiveRecord::Migration[5.1]
       t.string :technologies, array: true
       t.string :field
       t.string :pay
+      t.string :job_type
+      t.string :experience_level
       t.timestamps
 
     end

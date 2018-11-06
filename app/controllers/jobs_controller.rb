@@ -6,9 +6,18 @@ class JobsController < ApplicationController
   def create
     @job = Job.new(job_params)
     if @job.save
-      flash[:success] = "Article was successfully created"
+      flash[:success] = "Job was successfully created"
       redirect_to job_path(@job)
     end
+  end
+
+  def show
+    @job = Job.find(params[:id])
+  end
+
+  def destroy
+    @job = Job.find(params[:id])
+    @job.destroy
   end
 
   private

@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20181011155638) do
     t.string "technologies"
     t.string "field"
     t.string "pay"
+    t.string "job_type"
+    t.string "experience_level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
