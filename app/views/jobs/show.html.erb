@@ -1,1 +1,4 @@
 <h1><%= @job.title %></h1>
+<%= @job.technologies.each do |tech|%>
+  <%= tech %>
+<%end %>
