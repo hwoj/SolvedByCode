@@ -19,6 +19,9 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
     @job.destroy
   end
+  def index
+    @jobs = Job.all
+  end
 
   private
 
