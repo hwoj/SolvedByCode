@@ -9,9 +9,11 @@ body {
 }
 
 .jumbotron {
-  height: 530px;
-  background-image: asset-url('lock_tech');
+  background-image: asset-url('background.jpg');
   background-size: cover;
+  margin-bottom: 0;
+  height: 573px;
+
 }
 
 .jumbotron h1 {
@@ -22,7 +24,7 @@ body {
 }
 
 .front-page-header {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 .front-page-header h1{
@@ -40,6 +42,7 @@ body {
 }
 
 .why span{
+  font-size: 1.5em;
   color: #2E2F30;
   border-bottom: #2E2F30 1px solid;
   text-align: center;
@@ -53,4 +56,20 @@ body {
 .job-form {
   margin-top: 100px;
   margin-bottom: 50px;
+}
+.splited {
+  background-color: #f3f3f3;
+  border: #000 2px solid;
+  border-radius: 17px;
+}
+.apply-steps {
+  margin-left: 10px;
+}
+.btn-sign-up {
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+.bordered {
+  height: 275px;
+  border-left: #343434 2px solid;
 }
