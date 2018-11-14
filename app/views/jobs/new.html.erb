@@ -41,7 +41,8 @@
           <%= f.label :technologies %>
         </div>
         <div class="col-sm-8">
-          <%= f.collection_check_boxes(:technologies, {'Ruby': 'ruby', 'Ruby on Rails': 'ruby-on-rails', 'Java': 'java', 'C++': 'C++'}, :first, :last) %>
+          <%= f.check_box :technologies, {multiple: true}, "ruby", nil %>
+          <%= f.check_box :technologies, {multiple: true}, "java", nil %>
         </div>
       </div>
       <div class="form-group">
