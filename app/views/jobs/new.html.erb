@@ -40,9 +40,19 @@
         <div class="control-label col-sm-2">
           <%= f.label :technologies %>
         </div>
-        <div class="col-sm-8">
-          <%= f.check_box :technologies, {multiple: true}, "ruby", nil %>
-          <%= f.check_box :technologies, {multiple: true}, "java", nil %>
+        <div class="dropdown">
+          <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Add Technologies <span class="caret"></span>
+          </div>
+          <div class="dropdown-menu">
+            <div class="col-sm-8">
+              <%= f.check_box :technologies, {multiple: true}, "ruby", nil %>Ruby
+              <%= f.check_box :technologies, {multiple: true}, "java", nil %>Java
+              <%= f.check_box :technologies, {multiple: true}, "c++", nil %> C++
+              <%= f.check_box :technologies, {nultiple: true}, "python", nil %> Python
+              <%= f.check_box :technologies, {multiple: true}, "SQL", nil %> SQL
+            </div>
+          </div>
         </div>
       </div>
       <div class="form-group">
