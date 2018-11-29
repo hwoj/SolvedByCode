@@ -11,15 +11,15 @@
   <% end %>
 </div>
 
-<div class="job-description">
+<div class="job-description col-sm-8 col-sm-offest-1">
   <% if @job.description != "Add from pdf" %>
     <%= @job.description %>
   <% end %>
 </div>
 
-<div class="job-info">
-  <h6>Job type: </h6><%= @job.job_type %>
-  <h6>Experience level: </h6><%= @job.experience_level %>
-  <h6>Job pay: </h6><%= @job.pay %>
-  <h6>Job industry: </h6><%= @job.field %>
+<div class="job-info col-sm-3 col-sm-offset-1">
+  <span>Job type: </span><%= @job.job_type %>
+  <span>Experience level: </span><%= @job.experience_level %>
+  <span>Job pay: </span><%= @job.pay %>
+  <span>Job industry: </span><%= @job.field %>
 </div>
