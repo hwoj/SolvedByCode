@@ -10,3 +10,16 @@
     </div>
   <% end %>
 </div>
+
+<div class="job-description">
+  <% if @job.description != "Add from pdf" %>
+    <%= @job.description %>
+  <% end %>
+</div>
+
+<div class="job-info">
+  <h6>Job type: </h6><%= @job.job_type %>
+  <h6>Experience level: </h6><%= @job.experience_level %>
+  <h6>Job pay: </h6><%= @job.pay %>
+  <h6>Job industry: </h6><%= @job.field %>
+</div>
