@@ -1,0 +1,16 @@
+<% obj.each do |job| %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="well well-lg">
+        <div class="job-title">
+          <%= link_to job.title, job_path(job) %>
+        </div>
+        <div class="row job-techs">
+          <% job.technologies.each do |tech| %>
+            <span class="tech"><%= tech %></span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
