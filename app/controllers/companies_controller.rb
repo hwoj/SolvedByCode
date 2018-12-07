@@ -7,7 +7,7 @@ class CompaniesController < ApplicationController
     @company = Company.new(company_params)
     if @company.save
       flash[:success] = "Welcome to SolvedByCode #{@company.companyname}!"
-      redirect_to jobs_path
+      redirect_to "/jobs"
     else
       render 'new'
     end
