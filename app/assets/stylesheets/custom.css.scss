@@ -75,8 +75,23 @@ body {
 }
 
 .dropdown-menu {
-  margin-left: 208px;
+  margin-left: 17%;
   float: left;
+  max-width: 210px;
+}
+
+.checkbox-group {
+  display: block;
+  float: left;
+  margin: 5px 5px 5px 5px;
+}
+
+.checkbox-group span {
+  margin-left: 4px;
+}
+
+.checkbox-group input {
+  margin: auto 0 0 0;
 }
 
 .job-show-heading {
@@ -106,5 +121,6 @@ body {
 .form-button {
   margin-left: 15px;
 }
+
 
 

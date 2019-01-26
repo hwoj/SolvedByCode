@@ -68,12 +68,12 @@
             Add Technologies <span class="caret"></span>
           </div>
           <div class="dropdown-menu">
-            <div class="col-sm-8">
-              <%= f.check_box :technologies, {multiple: true}, "ruby", nil %>Ruby
-              <%= f.check_box :technologies, {multiple: true}, "java", nil %>Java
-              <%= f.check_box :technologies, {multiple: true}, "c++", nil %> C++
-              <%= f.check_box :technologies, {nultiple: true}, "python", nil %> Python
-              <%= f.check_box :technologies, {multiple: true}, "SQL", nil %> SQL
+            <div class="col-sm-8 tech-checkboxes">
+              <div class="checkbox-group"><%= f.check_box :technologies, {multiple: true}, "ruby", nil %><span>Ruby</span></div>
+              <div class="checkbox-group"><%= f.check_box :technologies, {multiple: true}, "java", nil %><span>Java</span></div>
+              <div class="checkbox-group"><%= f.check_box :technologies, {multiple: true}, "c++", nil %> <span>C++</span></div>
+              <div class="checkbox-group"><%= f.check_box :technologies, {nultiple: true}, "python", nil %> <span>Python</span></div>
+              <div class="checkbox-group"><%= f.check_box :technologies, {multiple: true}, "SQL", nil %> <span>SQL</span></div>
             </div>
           </div>
         </div>
