@@ -6,7 +6,7 @@
     <p><%= @company.description %></p>
     <h2>Company Benefits</h2>
     <% @company.benefits.each do |benefit| %>
-      <span class="benefit"><%= benefit %></span>
+      <%= benefits(benefit) %><br>
     <% end %>
   </div>
   <div class="col-sm-2 company-info">
