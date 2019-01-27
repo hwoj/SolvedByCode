@@ -1,0 +1,22 @@
+<h1 align="center" style="margin-top: 50px;"><%= @company.companyname %></h1>
+
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-1">
+    <h2>Company Description</h2>
+    <p><%= @company.description %></p>
+    <h2>Company Benefits</h2>
+    <%= @company.benefits %>
+  </div>
+  <div class="col-sm-2 company-info">
+    <h3 align="center">Company info</h3>
+    <span class="glyphicon glyphicon-equalizer"></span> <span class="info"><%= link_to 'Company Website', "http://#{@company.website}" %></span> <br>
+    <span class="glyphicon glyphicon-user"></span> <span class="info"><%= @company.size %></span> <br>
+    <span class="glyphicon glyphicon-briefcase"></span> <span class="info"><%= @company.industries %></span> <br>
+    <span class="glyphicon glyphicon-globe"></span> <span class="info"><%= @company.location %></span>
+  </div>
+</div>
+
+
+
+
+
