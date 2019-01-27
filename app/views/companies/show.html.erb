@@ -5,7 +5,9 @@
     <h2>Company Description</h2>
     <p><%= @company.description %></p>
     <h2>Company Benefits</h2>
-    <%= @company.benefits %>
+    <% @company.benefits.each do |benefit| %>
+      <%= benefit %>
+    <% end %>
   </div>
   <div class="col-sm-2 company-info">
     <h3 align="center">Company info</h3>
