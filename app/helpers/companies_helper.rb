@@ -6,7 +6,7 @@ module CompaniesHelper
     when "Health care"
       return '<i class="fas fa-medkit"></i> <span class="benefit" style="margin-left: 5px;> Health care</span>'
     when "Pension plans"
-      return '<span class="glyphicon glyphicon-usd"></span> <span class="benefit" style="margin-left: 5px;> Pension plans</span>'
+      return '<span class="glyphicon glyphicon-usd"></span> <span class="benefit" style="margin-left: 5px;"> Pension plans</span>'
     when "Work remotely"
       return '<span class="glyphicon glyphicon-bed"></span> <span class="benefit" style="margin-left: 5px;"> Work remotely</span>'
     when "Daily free meals"
