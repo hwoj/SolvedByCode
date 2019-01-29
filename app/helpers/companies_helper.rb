@@ -1,4 +1,5 @@
 module CompaniesHelper
+  require "redcarpet"
   def benefits(benefit)
     case benefit
     when "Dental care"
@@ -16,5 +17,11 @@ module CompaniesHelper
     else
       return benefit
     end
+  end
+
+  def render_html(description)
+    markdown = Redcarpet::Markdown.new(renderer, extensions = {})
+    file = File.read(description)
+    markdown file
   end
 end
