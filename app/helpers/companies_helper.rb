@@ -20,8 +20,9 @@ module CompaniesHelper
   end
 
   def render_html(description)
+    renderer = Redcarpet::Render::HTML.new(prettify: true)
     markdown = Redcarpet::Markdown.new(renderer, extensions = {})
-    file = File.read(description)
-    markdown file
+    file = IO.read(description)
+    markdown.render(file)
   end
 end

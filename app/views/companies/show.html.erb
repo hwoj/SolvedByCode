@@ -3,11 +3,12 @@
 <div class="row">
   <div class="col-sm-8 col-sm-offset-1">
     <h2>Company Description</h2>
-    <p><%= @company.description %></p>
+    <%= raw (render_html(@company.description.path)) %>
     <h2>Company Benefits</h2>
     <% @company.benefits.each do |benefit| %>
       <%= raw(benefits(benefit)) %><br>
     <% end %>
+
 
   </div>
   <div class="col-sm-2 company-info">
@@ -21,7 +22,7 @@
 
 <div >
   <h2 align="center">Job openings at this company</h2>
-  <%= render_html(@company.description.url) %>
+
 </div>
 
 

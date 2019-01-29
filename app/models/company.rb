@@ -1,4 +1,5 @@
 class Company < ApplicationRecord
+  mount_uploader :description, DescriptionUploader
   has_many :jobs
   has_secure_password
   validates :companyname, presence: true, uniqueness: {case_sensitive: false}
