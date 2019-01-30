@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190130013804) do
+ActiveRecord::Schema.define(version: 20190130140325) do
 
   create_table "applicants", force: :cascade do |t|
-    t.string "username"
+    t.string "name"
     t.string "email"
     t.string "resume"
     t.string "password_digest"
