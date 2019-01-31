@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/companies/signup', to: 'companies#new'
   resources :companies, except: [:new]
   resources :jobs
+  get '/applicants/signup', to: 'applicants#new'
+  resources :applicants, except: [:new]
 
 
 end
