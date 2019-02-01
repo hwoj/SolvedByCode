@@ -13,6 +13,10 @@ class ApplicantsController < ApplicationController
     end
   end
 
+  def show
+    @applicant = Applicant.find(params[:id])
+  end
+
   private
   def applicant_params
     params.require(:applicant).permit(:name, :email, :password, :resume, :username)
