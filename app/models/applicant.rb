@@ -1,4 +1,5 @@
 class Applicant < ApplicationRecord
+  mount_uploader :resume, ResumeUploader
   validates :username, presence: true, uniqueness: {case_sensitive: false}
   has_secure_password
   VALID_EMAIL_REGEX= /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

@@ -15,6 +15,6 @@ class ApplicantsController < ApplicationController
 
   private
   def applicant_params
-    params.require(:applicant).permit(:name, :email, :password, :resume)
+    params.require(:applicant).permit(:name, :email, :password, :resume, :username)
   end
 end
