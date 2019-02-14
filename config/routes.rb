@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   resources :jobs
   get '/applicants/signup', to: 'applicants#new'
   resources :applicants, except: [:new]
-  get '/login', to: 'sessions#new'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
 
 
 end
