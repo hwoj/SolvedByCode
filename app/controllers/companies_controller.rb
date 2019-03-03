@@ -1,4 +1,6 @@
 class CompaniesController < ApplicationController
+  before_action :verify_company, only: :edit
+
   def new
     @company = Company.new
   end
@@ -30,9 +32,19 @@ class CompaniesController < ApplicationController
   def show
     @company = Company.find(params[:id])
   end
+
   private
 
   def company_params
     params.require(:company).permit(:companyname, :email, :password, :website, :size, :location, :description, :industries, :benefits => [] )
+  end
+
+  def verify_company
+    if @current_user_type == "Company"
+      if @current_user != @company || @current_user.nil?
+        redirect_to login_path
+        flash[:danger] = "You must be logged in as this user to perform this action"
+      end
+    end
   end
 end
