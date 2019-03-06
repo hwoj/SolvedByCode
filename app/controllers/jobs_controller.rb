@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
   def new
-    if @current_user_type != company
+    if @current_user_type != "Company"
       redirect_to login_path
     else
       @job = Job.new
