@@ -1,10 +1,15 @@
 class JobsController < ApplicationController
   def new
-    @job = Job.new
+    if @current_user_type != company
+      redirect_to login_path
+    else
+      @job = Job.new
+    end
   end
 
   def create
     @job = Job.new(job_params)
+    @job.company_id = @current_user
     if @job.save
       flash[:success] = "Job was successfully created"
       redirect_to job_path(@job)
@@ -17,7 +22,13 @@ class JobsController < ApplicationController
 
   def destroy
     @job = Job.find(params[:id])
-    @job.destroy
+    if @job.company_id == @current_user && @current_user_type == "Company"
+      @job.destroy
+    else
+      redirect_back(fallback_location: login_path)
+      flash[:danger] = "You must be signed in as this user to delete their jobs"
+    end
+
   end
   def index
     @jobs = Job.all
@@ -26,6 +37,6 @@ class JobsController < ApplicationController
   private
 
   def job_params
-    params.require(:job).permit(:title, :description, :company, :location, :field, :pay, :job_type, :experience_level, :technologies => [])
+    params.require(:job).permit(:title, :description, :company_id, :location, :field, :pay, :job_type, :experience_level, :technologies => [])
   end
-end
+  end

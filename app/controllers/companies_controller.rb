@@ -19,7 +19,7 @@ class CompaniesController < ApplicationController
     if Company.find(params[:id]) == @current_user && @current_user_type == "Company"
       @company = Company.find(params[:id])
     else
-      redirect_to login_path
+      redirect_back(fallback_location: login_path)
       flash[:danger] = "You must be logged in as this user to perform this action"
     end
 
