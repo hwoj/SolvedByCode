@@ -2,6 +2,7 @@ class JobsController < ApplicationController
   def new
     if @current_user_type != "Company"
       redirect_to login_path
+      flash[:danger] = "Please sign in as a company to post a job"
     else
       @job = Job.new
     end

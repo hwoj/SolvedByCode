@@ -11,15 +11,19 @@ class SessionsController < ApplicationController
         session[:user_type] = "Applicant"
         redirect_to(jobs_path)
       end
-    end
-  else if params[:type] == "Company"
+
+    elsif params[:type] == "Company"
          user = Company.find_by(email: params[:session][:email])
          if user && user.authenticate(params[:session][:password])
            session[:user_id] = user.id
            session[:user_type] = "Company"
            redirect_to(company_path(user))
          end
+    else
+      flash[:danger] = "There was something wrong with your login credentials"
+      render 'new'
     end
+
   end
 
   def destroy
