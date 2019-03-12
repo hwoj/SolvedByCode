@@ -19,8 +19,9 @@
 </div>
 
 <div >
-  <h2 align="center">Job openings at this company</h2>
-
+  <% if @company.jobs.any? %>
+    <h2 align="center">Job openings at this company</h2>
+  <% end %>
 </div>
 
 
