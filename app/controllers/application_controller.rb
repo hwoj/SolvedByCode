@@ -4,12 +4,11 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
   def current_user
-    if session[:user_type] == "Applicant"
+    @current_user_type ||= session[:user_type] if session[:user_type]
+    if @current_user_type == "Applicant"
       @current_user ||= Applicant.find(session[:current_user_id]) if session[:current_user_id]
-      @current_user_type ||= "Applicant"
-    else if session[:user_type] == "Company"
+      else if @current_user_type == "Company"
            @current_user ||= Company.find(session[:user_id]) if session[:user_id]
-           @current_user_type ||= "Company"
          end
     end
   end
