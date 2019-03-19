@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if params[:session][:type] == "Applicant"
+    if params[:type] == "Applicant"
       user = Applicant.find_by(email: params[:email])
       if user && user.authenticate(params[:password])
         session[:current_user_id] = user.id
@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         redirect_to(jobs_path)
       end
 
-    elsif params[:session][:type] == "Company"
+    elsif params[:type] == "Company"
          user = Company.find_by(email: params[:email])
          if user && user.authenticate(params[:password])
            session[:current_user_id] = user.id
