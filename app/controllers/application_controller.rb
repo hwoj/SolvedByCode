@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     if @current_user_type == "Applicant"
       @current_user ||= Applicant.find(session[:current_user_id]) if session[:current_user_id]
       else if @current_user_type == "Company"
-           @current_user ||= Company.find(session[:user_id]) if session[:user_id]
+           @current_user ||= Company.find(session[:current_user_id]) if session[:user_id]
          end
     end
   end
