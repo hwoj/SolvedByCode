@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dd4f819-27b9-4e0d-96be-be91d28f0333" name="Default Changelist" comment="fixed bug in jobs new method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/carrierwave.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/carrierwave.rb" afterDir="false" />
-    </list>
+    <list default="true" id="7dd4f819-27b9-4e0d-96be-be91d28f0333" name="Default Changelist" comment="fixed bug in jobs new method" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+            <state relative-caret-position="288">
+              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -481,7 +478,7 @@
       <workItem from="1553043584686" duration="1792000" />
       <workItem from="1553045414646" duration="1873000" />
       <workItem from="1553096670594" duration="1690000" />
-      <workItem from="1553098529155" duration="242000" />
+      <workItem from="1553098529155" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="fix #4">
       <created>1543199147071</created>
@@ -571,11 +568,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210970000" />
+    <option name="totallyTimeSpent" value="211126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3417004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -924,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/carrierwave.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        <state relative-caret-position="288">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
         </state>
       </provider>
     </entry>
