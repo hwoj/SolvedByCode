@@ -11,8 +11,8 @@ require 'carrierwave/storage/fog'
       config.fog_provider = 'fog/aws'                        # required
       config.fog_credentials = {
           provider:              'AWS',                        # required
-          aws_access_key_id:     'AKIAITUSXESPKGOX6EVA',                        # required unless using use_iam_profile
-          aws_secret_access_key: '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',                        # required unless using use_iam_profile
+          aws_access_key_id:     'AKIAIDE6DAUC74OJICVA',                        # required unless using use_iam_profile
+          aws_secret_access_key: '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',                        # required unless using use_iam_profile
       }
       config.fog_directory  = 'solved-by-code'                                      # required
     end
