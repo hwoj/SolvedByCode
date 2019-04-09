@@ -763,6 +763,8 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    carrierwave-postgresql (0.3.0)
+      carrierwave (>= 0.10.0)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.2.2)
@@ -926,6 +928,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   carrierwave
+  carrierwave-postgresql
   coffee-rails (~> 4.2)
   devise
   fog-aws
