@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col-sm-8 col-sm-offset-1">
     <h2>Company Description</h2>
-    <%= raw (render_html(@company.description.path)) %>
+    <%= raw (render_html(@company.description)) %>
     <h2>Company Benefits</h2>
     <% @company.benefits.each do |benefit| %>
       <%= raw(benefits(benefit)) %><br>
